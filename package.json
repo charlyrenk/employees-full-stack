@@ -1,0 +1,25 @@
+{
+  "name": "employees-full-stack",
+  "version": "1.0.0",
+  "description": "Weekend challenge 4 full-stack assignment using angular.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlyrenk/employees-full-stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlyrenk/employees-full-stack/issues"
+  },
+  "homepage": "https://github.com/charlyrenk/employees-full-stack#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "pg": "^7.1.2"
+  }
+}
