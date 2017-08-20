@@ -13,10 +13,18 @@
 <body ng-app="EmployeeApp" ng-controller="EmployeeController as vm">
     <h1>jQuery Express Node Starter</h1>
     <div id="employeeSalaryFields">
+        <label for="firstNameInput"> First Name:</label>
         <input type="text" id="firstNameInput" placeholder="First Name" ng-model="vm.newEmployee.first_name">
+        <br>
+        <label for="lastNameInput"> Last Name:</label>
         <input type="text" id="lastNameInput" placeholder="Last Name" ng-model="vm.newEmployee.last_name">
+        <br>
+        <label for="jobTitleInput"> Job Title:</label>
         <input type="text" id="jobTitleInput" placeholder="Job Title" ng-model="vm.newEmployee.job_title">
-        <input type="text" id="lastNameInput" placeholder="Annual Salary" ng-model="vm.newEmployee.annual_salary">
+        <br>
+        <label for="salaryInput"> Annual Salary:</label>
+        <input type="text" id="salaryInput" placeholder="Annual Salary" ng-model="vm.newEmployee.annual_salary">
+        <br>
         <button id="sendEmployeeButton" ng-click="vm.postNewEmployees()">Send Information</button>
     </div>
     <table>
