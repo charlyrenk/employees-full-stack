@@ -2,17 +2,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Employee Full Stack Application</title>
+    <meta charset="utf-8">
+    <title>Employee Full Stack Application</title>
 
-  <script src="vendors/angular.min.js"></script>
-  <script src="scripts/client.js"></script>
-  <link rel="stylesheet" href="styles.css">
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body ng-app="PetApp" ng-controller="PetController as vm">
-  
-
-
-
+    <h1>jQuery Express Node Starter</h1>
+    <div id="employeeSalaryFields">
+        <input type="text" id="firstNameInput" placeholder="First Name" ng-model="vm.newEmployee.first_name">
+        <input type="text" id="lastNameInput" placeholder="Last Name" ng-model="vm.newEmployee.last_name">
+        <input type="text" id="jobTitleInput" placeholder="Job Title" ng-model="vm.newEmployee.job_title">
+        <input type="text" id="lastNameInput" placeholder="Annual Salary" ng-model="vm.newEmployee.annual_salary">
+        <button id="sendEmployeeButton" ng-click="vm.postNewEmployees()">Send</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="employee in vm.employees">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+    </table>
 </body>
+
 </html>
